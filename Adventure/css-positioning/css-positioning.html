@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS Positioning </title>
+<style>
+#fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  border: 3px solid purple;
+}
+#relative {
+  position: relative;
+  right: 700px; left: 700px;
+  width:100px;
+  height: 100px
+  border: 3px solid red;
+}
+#absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100px;
+  border: 3px solid green;
+}
+
+#dogone {position: fixed; top:10px; bottom: 10px; right: 75px; left: 75px; z-index: -1; cursor: cell;}
+#dogtwo {position: fixed; top:40px; bottom: 40px; right: 90px; left: 90px; z-index: 0; cursor: crosshair;}
+#dogthree {position: fixed; top:60px; bottom: 60px; right: 100px; left: 100px; z-index: 1; cursor: help;}
+
+#cell {cursor: cell;}
+#crosshair {cursor: crosshair;}
+#grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+#help {cursor: help;}
+#move {cursor: move;}
+
+</style>
+</head>
+<body>
+<p>
+<img id="fixed" src="penguinss.jpg" >
+<img id="relative" src="penguin1.jpg" >
+<img id="absolute" src="penguins2.jpg" >
+</p>
+<p>
+<img id="dogone" src="dog1.jpg" >
+<img id="dogtwo" src="dog2.jpg" >
+<img id="dogthree" src="dog3.jpg" >
+</p>
+<p>
+<img id="cell"> cell </p>
+<img id="crosshair"> crosshair </p>
+<img id="grabbing"> grabbing </p>
+<img id="help"> help </p>
+<img id="move">move </p>
+</p>
+
+</style>
+</head>
+<body>
+
+</body>
+</html>
