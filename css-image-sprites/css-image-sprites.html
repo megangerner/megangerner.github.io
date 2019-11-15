@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Sprites</title>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 50px;
+  background: url('spritesmiles.png') 0 0;
+}
+
+#prev {
+  left: 50px;
+  width: 50px;
+  background: url('spritesmiles.png') -51px 0;
+}
+
+#yay {
+  left: 100px;
+  width: 50px;
+  background: url('spritesmiles.png') -102px 0;
+}
+
+#next {
+  left: 150px;
+  width: 50px;
+  background: url('spritesmiles.png') -153px 0;
+}
+
+#home a:hover {
+  background: url('spritesmiles.png') 0 -51px;
+}
+
+#prev a:hover {
+  background: url('spritesmiles.png') -51px -51px;
+}
+
+#next a:hover {
+  background: url('spritesmiles.png') -102px -51px;
+}
+
+#yay a:hover {
+  background: url('spritesmiles.png') -153px -51px;
+}
+</style>
+</head>
+<body>
+<ul id="navlist">
+  <li id="home"><a href="https://www.nhl.com/penguins"></a></li>
+  <li id="prev"><a href="https://en.wikipedia.org/wiki/Penguin"></a></li>
+  <li id="next"><a href="https://theathletic.com/team/penguins/"></a></li>
+  <li id="yay"><a href="https://en.wikipedia.org/wiki/Pittsburgh_Penguins"></a></li>
+</ul>
+</body>
+</html>
