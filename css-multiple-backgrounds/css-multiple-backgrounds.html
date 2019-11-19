@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+#one {
+    height: 500px; 
+    width: 700px; 
+background-image: url("sunglasses.png"), url("leo.jpg"),url("tile.jpg");
+    background-size: 300px 150px, 400px 400px, auto;
+     background-position: 350px 220px, right bottom, left top;
+        background-repeat: no-repeat, no-repeat, repeat;}
+#two {
+    height: 500px; 
+    width: 700px; 
+background:url("sunglasses.png") 350px 220px/300px 150px no-repeat, 
+  url("leo.jpg") right bottom/400px 400px  no-repeat,
+ url("tile.jpg") left top/auto repeat; }
+
+ html { 
+  background: url("skky.jpg") no-repeat center fixed; 
+  background-size: cover;
+}
+
+#three {
+  background: url("doggo.jpg") no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+#four {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id=one> </div>
+<div id=two> </div>
+
+<div id="three">
+  <div id="four">
+    <h1 style="font-size:50px">Megan Gerner</h1>
+  </div>
+</div>
+
+</body>
+</html>
