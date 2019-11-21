@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Gradients</title>
+<style>
+.square {
+  height: 400px; 
+  width: 400px;
+}
+
+#grad1 {
+  height: 400px;
+  background-color: red;
+  background-image: linear-gradient(yellow, green); 
+}
+#grad2 {
+  height: 400px;
+  background-color: pink;
+  background-image: linear-gradient(to pink, purple , yellow, red); 
+}
+#grad3 {
+  height: 400px;
+  background-color: red;
+  background-image: linear-gradient(to bottom right, green, blue, purple, blue); 
+}
+#grad4 {
+  height: 400px;
+  background-color: red;
+  background-image: linear-gradient(to left, rgba(209, 56, 240, 1), rgba(56, 56, 240, 1), rgba(56, 154, 240, 1), rgba(56, 240, 139, 0), rgba(148, 240, 56, 1)); 
+}
+#grad5 {
+     height: 400px;
+  background-image: repeating-linear-gradient( pink 10%, purple 20%);
+}
+#grad6 {
+     height: 400px;
+  background-image: repeating-linear-gradient(red, orange 10%, yellow 20%);
+}
+#grad7 {  
+    height: 400px;
+  width: 400px;
+  background-color: yellow;
+  background-image: radial-gradient(purple, yellow, green, blue);
+}
+</style>
+</head>
+<body>
+<div class="square"> 
+<div id="grad1"></div>
+<div id="grad2"></div>
+<div id="grad3"></div>
+<div id="grad4"></div>
+<div id="grad5"></div>
+<div id="grad6"></div>
+<div id="grad7"></div>
+</div>
+</body>
+</html>
