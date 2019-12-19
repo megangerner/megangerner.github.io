@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(95, 147, 243);
+    color: azure;
+    font-size: 1.1em;
+    font-family:"impact" 
+    text-align: center 
+}
+h1 {
+    color: rgb(95, 147, 243); font-family: "impact" 
+}
+ 
+h2 {
+    color: azure; font-family: "impact" 
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+p {
+  color: white;
+}
+/* nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+ 
+li {
+  float: left;
+}
+ 
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+a{color:white;}
+ 
+li a:hover {
+  background-color: #ddd;
+}
+ 
+.active {
+  background-color: white;
+}
+ 
+/* Style the header */
+.header {
+  background-color: seagreen;
+  padding: 20px;
+  text-align: center;
+}
+ 
+.indexcolumn {
+  float: left;
+  width: 100%;
+}
+.column {
+  float: left;
+  width: 50%;
+  height: 300px
+}
+ 
+.footer
+{position:fixed; left: 0; bottom: 0; width: 100%; text-align: center; }
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+ 
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+ #list { color: black; display: block; padding: 10px; }
+
+ figure{
+     width: 100%;
+     padding: 5px;
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end:40px;
+ }
+ img{width:100%}
